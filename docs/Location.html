@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Location</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Class: Location</h1>
+    
+    
+
+
+
+<section>
+    
+<header>
+    <h2>
+    Location
+    </h2>
+    
+        <div class="class-description">Fishingtree.Location</div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <h4 class="name" id="Location"><span class="type-signature"></span>new Location<span class="signature">()</span><span class="type-signature"> &rarr; {function}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        window.location 과 관련한 Javascript 정의
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line630">line 630</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">function</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="getFullPageLocation"><span class="type-signature"></span>getFullPageLocation<span class="signature">(href)</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        location.href 에서 search, hash를 제외한 순수한 url 정보 반환
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>href</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">href 값</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>{@param href} location.href</li>
+        </ul></dd>
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line725">line 725</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">String</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code><code>
+             // 기본 사용 - http://localhost:63342/Fishingtree/index.html
+             var exGetFullPageLocation1 = Fishingtree.location.getFullPageLocation();
+             console.log( exGetFullPageLocation1 );  // http://localhost:63342/Fishingtree/index.html
+
+             // href 값을 넣어서 사용
+             var exGetFullPageLocation2 = Fishingtree.location.getFullPageLocation( 'http://localhost:63342/Fishingtree/index.html?a=1&b=2#top' );
+             console.log( exGetFullPageLocation2 );  // http://localhost:63342/Fishingtree/index.html
+
+             // 새로운 이름으로 Class를 선언하여 사용시
+             var newClass = new Fishingtree.Location();
+             var exGetFullPageLocation3 = newClass.getFullPageLocation();
+             console.log( exGetFullPageLocation3 );  // http://localhost:63342/Fishingtree/index.html</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getPageLocation"><span class="type-signature"></span>getPageLocation<span class="signature">(href)</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        location.href 에서 페이지명만 반환
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>href</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">href 값</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>{@param href} location.href</li>
+        </ul></dd>
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line691">line 691</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">String</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code><code>
+             // 기본 사용 - http://localhost:63342/Fishingtree/index.html
+             var exGetPageLocation1 = Fishingtree.location.getPageLocation();
+             console.log( exGetPageLocation1 );  // index.html
+
+             // href 값을 넣어서 사용
+             var exGetPageLocation2 = Fishingtree.location.getPageLocation( 'http://localhost:63342/Fishingtree/index.html?a=1&b=2#top' );
+             console.log( exGetPageLocation2 );  // index.html
+
+             // 새로운 이름으로 Class를 선언하여 사용시
+             var newClass = new Fishingtree.Location();
+             var exGetPageLocation3 = newClass.getPageLocation();
+             console.log( exGetPageLocation3 );  // index.html</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getQueryStr"><span class="type-signature"></span>getQueryStr<span class="signature">(href)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        location.href 또는 href 값에서 queryString 추출 반환
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>href</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">href값</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line660">line 660</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Object</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code><code>
+             // 기본 사용 - http://localhost:63342/Fishingtree/index.html?temp=1
+             var exGetQueryStr1 = Fishingtree.location.getQueryStr();
+             console.log( exGetQueryStr1 );     // {temp: "1"}
+
+             // 직접 href 값을 넣는 경우
+             var exGetQueryStr2 = Fishingtree.location.getQueryStr( 'http://www.fishingtree.com?a=1&b=2#top' );
+             console.log( exGetQueryStr2 );     // {a: "1", b: "2#top"}
+
+             // 새로운 이름으로 Class를 선언하여 사용시
+             var newClass = new Fishingtree.Location();
+             var exGetQueryStr3 = newClass.getQueryStr( 'index.html' );
+             console.log( exGetQueryStr3 );     // {}</code></code></pre>
+
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="ArrayUtils.html">ArrayUtils</a></li><li><a href="Console.html">Console</a></li><li><a href="Cookie.html">Cookie</a></li><li><a href="Date.html">Date</a></li><li><a href="FormatUtils.html">FormatUtils</a></li><li><a href="Location.html">Location</a></li><li><a href="NumberUtils.html">NumberUtils</a></li><li><a href="StringUtils.html">StringUtils</a></li><li><a href="Utils.html">Utils</a></li><li><a href="Validate.html">Validate</a></li><li><a href="Window.html">Window</a></li></ul><h3>Namespaces</h3><ul><li><a href="Fishingtree.html">Fishingtree</a></li></ul><h3>Global</h3><ul><li><a href="global.html#arrayUtils">arrayUtils</a></li><li><a href="global.html#console">console</a></li><li><a href="global.html#cookie">cookie</a></li><li><a href="global.html#date">date</a></li><li><a href="global.html#formatUtils">formatUtils</a></li><li><a href="global.html#location">location</a></li><li><a href="global.html#numberUtils">numberUtils</a></li><li><a href="global.html#stringUtils">stringUtils</a></li><li><a href="global.html#utils">utils</a></li><li><a href="global.html#validate">validate</a></li><li><a href="global.html#version">version</a></li><li><a href="global.html#window">window</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.2</a> on Tue Jan 20 2015 17:30:29 GMT+0900 (KST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

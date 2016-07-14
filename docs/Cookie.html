@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Cookie</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Class: Cookie</h1>
+    
+    
+
+
+
+<section>
+    
+<header>
+    <h2>
+    Cookie
+    </h2>
+    
+        <div class="class-description">Fishingtree.Cookie</div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <h4 class="name" id="Cookie"><span class="type-signature"></span>new Cookie<span class="signature">()</span><span class="type-signature"> &rarr; {function}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Cookie 와 관련한 Javascript 정의
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line879">line 879</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">function</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <h4 class="name" id="getCookie"><span class="type-signature"></span>getCookie<span class="signature">(cname)</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        설정된 Cookie 값 반환
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>cname</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">찾고자하는 Cookie Name</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line927">line 927</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">String</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code><code>
+             // 기본 사용 - test 쿠키명 확인
+             var exCookieGet1 = Fishingtree.cookie.getCookie( 'test' );
+             console.log( exCookieGet1 );
+
+             // 새로운 이름으로 Class를 선언하여 사용시
+             var newClass = new Fishingtree.Cookie();
+             var exCookieGet2 = newClass.getCookie( 'test' );
+             console.log( exCookieGet2 );</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="setCookie"><span class="type-signature"></span>setCookie<span class="signature">(cname, cvalue, exdays)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Cookie 를 설정
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>cname</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">설정할 Cookie Name</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>cvalue</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">설정한 Cookie 값</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>exdays</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">설정한 Cookie 기간 - 일 단위</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Fishingtree.js.html">Fishingtree.js</a>, <a href="Fishingtree.js.html#line904">line 904</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code><code>
+             // 기본 사용 - test 쿠키명에 done 값을 현재 시간 기준으로 1일간 설정
+             var exCookieSet1 = Fishingtree.cookie.setCookie( 'test', 'done', 1 );
+
+             // 새로운 이름으로 Class를 선언하여 사용시
+             var newClass = new Fishingtree.Cookie();
+             var exCookieSet2 = newClass.setCookie( 'test2', 'done', 1 );</code></code></pre>
+
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+</article>
+
+</section>  
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="ArrayUtils.html">ArrayUtils</a></li><li><a href="Console.html">Console</a></li><li><a href="Cookie.html">Cookie</a></li><li><a href="Date.html">Date</a></li><li><a href="FormatUtils.html">FormatUtils</a></li><li><a href="Location.html">Location</a></li><li><a href="NumberUtils.html">NumberUtils</a></li><li><a href="StringUtils.html">StringUtils</a></li><li><a href="Utils.html">Utils</a></li><li><a href="Validate.html">Validate</a></li><li><a href="Window.html">Window</a></li></ul><h3>Namespaces</h3><ul><li><a href="Fishingtree.html">Fishingtree</a></li></ul><h3>Global</h3><ul><li><a href="global.html#arrayUtils">arrayUtils</a></li><li><a href="global.html#console">console</a></li><li><a href="global.html#cookie">cookie</a></li><li><a href="global.html#date">date</a></li><li><a href="global.html#formatUtils">formatUtils</a></li><li><a href="global.html#location">location</a></li><li><a href="global.html#numberUtils">numberUtils</a></li><li><a href="global.html#stringUtils">stringUtils</a></li><li><a href="global.html#utils">utils</a></li><li><a href="global.html#validate">validate</a></li><li><a href="global.html#version">version</a></li><li><a href="global.html#window">window</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.2</a> on Tue Jan 20 2015 17:30:29 GMT+0900 (KST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
